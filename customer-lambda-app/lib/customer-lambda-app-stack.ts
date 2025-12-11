@@ -10,7 +10,7 @@ export class CustomerAppStack extends cdk.Stack {
 
     // 1. The Lambda Function
     const customerLambda = new nodejs.NodejsFunction(this, 'CustomerHandler', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_20_X,
       entry: 'lambda/handler.ts', // Points to backend code
       handler: 'handler',
       bundling: {

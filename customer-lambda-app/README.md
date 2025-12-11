@@ -1,6 +1,7 @@
-# Welcome to your CDK TypeScript project
+# README
 
-This is a blank project for CDK development with TypeScript.
+AWS Stack definition of the Lambda function and API Gateway.
+
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 

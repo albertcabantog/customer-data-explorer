@@ -27,7 +27,6 @@ export const CustomerProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       const response = await fetch(`${API_URL}/customers?page=${page}&limit=${limit}`); 
       
       if (!response.ok) throw new Error('Failed to fetch data');
-      // console.log("response: " + response.text());
       const data: ApiResponse = await response.json();
       setCustomers(data.data);
       setTotal(data.total);
